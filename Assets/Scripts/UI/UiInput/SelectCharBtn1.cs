@@ -1,4 +1,8 @@
-﻿public class SelectCharBtn1 : SelectChar
+﻿
+
+using UnityEngine;
+
+public class SelectCharBtn1 : SelectChar
 {
     public override void Select()
     {
