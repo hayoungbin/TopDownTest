@@ -18,7 +18,7 @@ public class InPutName : MonoBehaviour
 
     public void PlayerInputNameSave()
     {
-        if (playerNameInput.text.Length >= 2 && playerNameInput.text.Length <= 10)
+        if (playerNameInput.text.Length >= 2 && playerNameInput.text.Length <= 10 && DataManager.instance.PlayerChar != null)
         {
             playerName = playerNameInput.text;
 

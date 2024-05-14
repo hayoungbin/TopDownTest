@@ -6,6 +6,8 @@ public class DataManager : MonoBehaviour
 
     public string playerName {  get; private set; }
 
+    public GameObject PlayerChar { get; private set; }
+
     private void Awake()
     {
         if (instance == null)
@@ -27,5 +29,10 @@ public class DataManager : MonoBehaviour
     public string OutputPlayerName()
     {
         return playerName;
+    }
+
+    public void SettingPlayerChar(GameObject gameObject)
+    {
+        PlayerChar = gameObject;
     }
 }
